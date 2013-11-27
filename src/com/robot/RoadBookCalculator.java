@@ -1,10 +1,13 @@
 package robot;
 
+import robot.Enum.Direction;
+import robot.Enum.Instruction;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import static robot.Direction.*;
-import static robot.Instruction.*;
+import static robot.Enum.Direction.*;
+import static robot.Enum.Instruction.*;
 
 public class RoadBookCalculator {
 

@@ -1,4 +1,4 @@
-package com.robot;
+package robot;
 
 public class Main {
 

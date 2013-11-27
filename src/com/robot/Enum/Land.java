@@ -1,5 +1,7 @@
-package robot;
+package robot.Enum;
 
+
+import robot.Execpt.TerrainNonRepertorieException;
 
 public enum Land {
 

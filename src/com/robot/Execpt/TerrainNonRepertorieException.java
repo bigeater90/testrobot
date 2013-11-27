@@ -1,4 +1,4 @@
-package robot;
+package robot.Execpt;
 
 
 public class TerrainNonRepertorieException extends Exception {

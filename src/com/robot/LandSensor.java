@@ -1,5 +1,10 @@
 package robot;
 
+import robot.Enum.Land;
+import robot.Execpt.InaccessibleCoordinate;
+import robot.Execpt.LandSensorDefaillance;
+import robot.Execpt.TerrainNonRepertorieException;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;

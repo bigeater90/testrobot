@@ -1,6 +1,8 @@
 package robot;
 
-import static robot.Direction.*;
+import robot.Enum.Direction;
+
+import static robot.Enum.Direction.*;
 
 public class MapTools {
 
