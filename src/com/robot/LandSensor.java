@@ -1,4 +1,9 @@
-package robot;
+package com.robot;
+
+import com.robot.Enum.Land;
+import com.robot.Execept.InaccessibleCoordinateException;
+import com.robot.Execept.LandSensorDefaillance;
+import com.robot.Execept.TerrainNonRepertorieException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +20,7 @@ public class LandSensor {
         this.random = random;
     }
 
-    public double getPointToPointEnergyCoefficient(Coordinates coordinate1, Coordinates coordinate2) throws LandSensorDefaillance, InaccessibleCoordinate {
+    public double getPointToPointEnergyCoefficient(Coordinates coordinate1, Coordinates coordinate2) throws LandSensorDefaillance, InaccessibleCoordinateException {
         if (carte.get(coordinate1)==null)
             try {
                 carte.put(coordinate1, Land.getLandByOrdinal(random.nextInt(Land.CountLand())));
@@ -30,7 +35,7 @@ public class LandSensor {
             }
         Land terrain1 = carte.get(coordinate1);
         Land terrain2 = carte.get(coordinate2);
-        if (terrain2==Land.Infranchissable) throw new InaccessibleCoordinate(coordinate2);
+        if (terrain2==Land.Infranchissable) throw new InaccessibleCoordinateException(coordinate2);
         return (terrain1.coefficient+terrain2.coefficient)/2.0;
     }
 

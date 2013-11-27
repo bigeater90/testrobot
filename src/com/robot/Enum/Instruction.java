@@ -1,4 +1,4 @@
-package robot;
+package com.robot.Enum;
 
 
 public enum Instruction {

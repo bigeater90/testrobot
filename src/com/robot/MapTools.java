@@ -1,4 +1,6 @@
-package robot;
+package com.robot;
+
+import com.robot.Enum.Direction;
 
 import static robot.Direction.*;
 

@@ -1,4 +1,4 @@
-package robot;
+package com.robot.Execept;
 
 
 public class UnlandedRobotException extends Exception {

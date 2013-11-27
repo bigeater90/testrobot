@@ -1,4 +1,6 @@
-package robot;
+package com.robot.Execept;
+
+import com.robot.Coordinates;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,10 +9,10 @@ package robot;
  * Time: 16:52
  * To change this template use File | Settings | File Templates.
  */
-public class InaccessibleCoordinate extends Exception {
+public class InaccessibleCoordinateException extends Exception {
     private Coordinates coordinate;
 
-    public InaccessibleCoordinate(Coordinates coordinate) {
+    public InaccessibleCoordinateException(Coordinates coordinate) {
         this.coordinate = coordinate;
     }
 }
