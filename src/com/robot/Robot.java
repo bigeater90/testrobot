@@ -1,14 +1,14 @@
 package com.robot;
 
-import com.robot.Enum.Direction;
-import com.robot.Enum.Instruction;
+import com.robot.enumeration.Direction;
+import com.robot.enumeration.Instruction;
 import com.robot.Execept.*;
 
 import java.util.ArrayList;
 
-import static robot.Direction.*;
-import static robot.Instruction.*;
-import static robot.RoadBookCalculator.calculateRoadBook;
+// import static robot.Direction.*;
+// import static robot.Instruction.*;
+// import static robot.RoadBookCalculator.calculateRoadBook;
 
 public class Robot {
 
@@ -32,7 +32,7 @@ public class Robot {
 
     public void land(Coordinates landPosition, LandSensor sensor) {
         position = landPosition;
-        direction = NORTH;
+        direction = Direction.NORTH;
         isLanded = true;
         landSensor = sensor;
         cells.setUp();
@@ -89,16 +89,16 @@ public class Robot {
         if (roadBook == null) throw new UndefinedRoadbookException();
         while (roadBook.hasInstruction()) {
             Instruction nextInstruction = roadBook.next();
-            if (nextInstruction == FORWARD) moveForward();
-            else if (nextInstruction == BACKWARD) moveBackward();
-            else if (nextInstruction == TURNLEFT) turnLeft();
-            else if (nextInstruction == TURNRIGHT) turnRight();
+            if (nextInstruction == Instruction.FORWARD) moveForward();
+            else if (nextInstruction == Instruction.BACKWARD) moveBackward();
+            else if (nextInstruction == Instruction.TURNLEFT) turnLeft();
+            else if (nextInstruction == Instruction.TURNRIGHT) turnRight();
         }
     }
 
     public void computeRoadTo(Coordinates destination) throws UnlandedRobotException {
         if (!isLanded) throw new UnlandedRobotException();
-        setRoadBook(calculateRoadBook(direction, position, destination, new ArrayList<Instruction>()));
+        setRoadBook(RoadBookCalculator.calculateRoadBook(direction, position, destination, new ArrayList<Instruction>()));
     }
 
 }

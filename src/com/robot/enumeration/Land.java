@@ -1,4 +1,4 @@
-package com.robot.Enum;
+package com.robot.enumeration;
 
 
 import com.robot.Execept.TerrainNonRepertorieException;

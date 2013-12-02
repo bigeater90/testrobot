@@ -1,6 +1,6 @@
 package com.robot;
 
-import com.robot.Enum.Land;
+import com.robot.enumeration.Land;
 import com.robot.Execept.InaccessibleCoordinateException;
 import com.robot.Execept.LandSensorDefaillance;
 import com.robot.Execept.TerrainNonRepertorieException;

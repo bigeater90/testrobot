@@ -1,6 +1,6 @@
 package com.robot;
 
-import com.robot.Enum.Instruction;
+import com.robot.enumeration.Instruction;
 
 import java.util.Iterator;
 import java.util.List;
