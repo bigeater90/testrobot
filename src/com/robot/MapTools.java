@@ -2,8 +2,6 @@ package com.robot;
 
 import com.robot.enumeration.Direction;
 
-//import static com.robot.enumeration.Direction.*;
-
 public class MapTools {
 
     static Coordinates nextForwardPosition(Coordinates position, Direction direction) {

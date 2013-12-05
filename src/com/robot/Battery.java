@@ -16,11 +16,7 @@ public class Battery {
     }
 
     public void charge() {
-        chargeLevel = chargeFunction(chargeLevel);
-    }
-
-    private float chargeFunction(float charge) {
-        return charge+CHARGE_STEP;
+        chargeLevel += CHARGE_STEP;
     }
 
     public void setUp() {
@@ -46,7 +42,7 @@ public class Battery {
         int clock = 0;
         float charge = chargeLevel;
         while (charge<neededEnergy) {
-            charge = chargeFunction(charge);
+            charge += CHARGE_STEP;
             clock++;
         }
         return clock*CHARGE_TOP;

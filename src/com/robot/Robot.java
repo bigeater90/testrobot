@@ -6,10 +6,6 @@ import com.robot.Execept.*;
 
 import java.util.ArrayList;
 
-// import static robot.Direction.*;
-// import static robot.Instruction.*;
-// import static robot.RoadBookCalculator.calculateRoadBook;
-
 public class Robot {
 
     private Coordinates position;
