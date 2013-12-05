@@ -37,13 +37,25 @@ public class BatteryUnitTest {
         Assert.assertTrue(false);
     }
 
+    @Test
+    public void testCanDeliver(){
+        Battery bat = new Battery();
+        Assert.assertTrue(bat.canDeliver(100));
+    }
+
+    @Test
+    public void testTimeToSufficientCharge(){
+        Battery bat = new Battery();
+        Assert.assertEquals(10000,bat.timeToSufficientCharge(200));
+    }
+
     @Ignore
     @Test
     public void testSetUp() throws InterruptedException {
         Battery bat = new Battery();
         bat.setUp();
-        Thread.sleep(1000);
-        Assert.assertEquals((float) 1000, bat.getChargeLevel());
+        Thread.sleep(10000);    //System.out.println(bat.timeToSufficientCharge(200));
+        Assert.assertEquals((float) 200, bat.getChargeLevel());
     }
 
 }
