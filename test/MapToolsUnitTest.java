@@ -4,12 +4,11 @@ import com.robot.enumeration.Direction;
 import junit.framework.Assert;
 import org.junit.Test;
 
-
-
 /**
  * User: Jean
  * Date: 07/12/2013
  */
+
 public class MapToolsUnitTest {
 
     @Test
@@ -78,42 +77,42 @@ public class MapToolsUnitTest {
     }
 
     @Test
-    public void counterclockwise1(){
+    public void testCounterclockwise1(){
         Assert.assertEquals(Direction.WEST,MapTools.counterclockwise(Direction.NORTH));
     }
 
     @Test
-    public void counterclockwise2(){
+    public void testCounterclockwise2(){
         Assert.assertEquals(Direction.SOUTH,MapTools.counterclockwise(Direction.WEST));
     }
 
     @Test
-    public void counterclockwise3(){
+    public void testCounterclockwise3(){
         Assert.assertEquals(Direction.EAST,MapTools.counterclockwise(Direction.SOUTH));
     }
 
     @Test
-    public void counterclockwise4(){
+    public void testCounterclockwise4(){
         Assert.assertEquals(Direction.NORTH,MapTools.counterclockwise(Direction.EAST));
     }
 
     @Test
-    public void clockwise1(){
+    public void testClockwise1(){
         Assert.assertEquals(Direction.EAST,MapTools.clockwise(Direction.NORTH));
     }
 
     @Test
-    public void clockwise2(){
+    public void testClockwise2(){
         Assert.assertEquals(Direction.SOUTH,MapTools.clockwise(Direction.EAST));
     }
 
     @Test
-    public void clockwise3(){
+    public void testClockwise3(){
         Assert.assertEquals(Direction.WEST,MapTools.clockwise(Direction.SOUTH));
     }
 
     @Test
-    public void clockwise4(){
+    public void testClockwise4(){
         Assert.assertEquals(Direction.NORTH,MapTools.clockwise(Direction.WEST));
     }
 }
