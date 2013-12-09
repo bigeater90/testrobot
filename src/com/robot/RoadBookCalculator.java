@@ -6,9 +6,6 @@ import com.robot.enumeration.Instruction;
 import java.util.ArrayList;
 import java.util.List;
 
-// import static robot.Direction.*;
-// import static robot.Instruction.*;
-
 public class RoadBookCalculator {
 
     static RoadBook calculateRoadBook(Direction direction, Coordinates position, Coordinates destination, ArrayList<Instruction> instructions) {
