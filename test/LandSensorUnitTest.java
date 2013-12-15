@@ -30,28 +30,15 @@ public class LandSensorUnitTest {
     }
 
     @Test
-    public void testGetPointToPointEnergyCoefficient1(){
+    public void testGetPointToPointEnergyCoefficient1() throws Exception {
         Mockito.when(rand.nextInt(Land.CountLand())).thenReturn(0);
-        try {
-            Assert.assertEquals(1,(int)ls.getPointToPointEnergyCoefficient(cord1,cord2));
-        }
-        catch (Exception e){
-            System.err.println(e.getMessage());
-        }
+        Assert.assertEquals(1,(int)ls.getPointToPointEnergyCoefficient(cord1,cord2));
     }
 
-    @Test
-    public void testGetPointToPointEnergyCoefficient2(){
+    @Test (expected = Exception.class)
+    public void testGetPointToPointEnergyCoefficient2() throws Exception {
         Mockito.when(rand.nextInt(Land.CountLand())).thenReturn(4);
-        try {
-            ls.getPointToPointEnergyCoefficient(cord1, cord2);
-        }
-        catch (Exception ice){
-            Assert.assertTrue(true);
-            return;
-        }
-        Assert.assertTrue(false);
+        ls.getPointToPointEnergyCoefficient(cord1, cord2);
     }
-
 
 }
