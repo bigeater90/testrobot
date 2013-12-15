@@ -40,7 +40,6 @@ public class LandSensorUnitTest {
         }
     }
 
-    @Ignore
     @Test
     public void testGetPointToPointEnergyCoefficient2(){
         Mockito.when(rand.nextInt(Land.CountLand())).thenReturn(4);
@@ -49,6 +48,7 @@ public class LandSensorUnitTest {
         }
         catch (Exception ice){
             Assert.assertTrue(true);
+            return;
         }
         Assert.assertTrue(false);
     }
