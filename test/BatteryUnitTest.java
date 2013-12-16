@@ -24,17 +24,10 @@ public class BatteryUnitTest {
         Assert.assertEquals((float)110,bat.getChargeLevel());
     }
 
-    @Test
-    public void testUse(){
+    @Test (expected = InsufficientChargeException.class)
+    public void testUse() throws Exception{
         Battery bat = new Battery();
-        try {
-            bat.use(110);
-        }
-        catch (InsufficientChargeException ice){
-            Assert.assertTrue(true);
-            return;
-        }
-        Assert.assertTrue(false);
+        bat.use(110);
     }
 
     @Test
