@@ -1,6 +1,6 @@
 package com.robot;
 
-import com.robot.Execept.InsufficientChargeException;
+import com.robot.exception.InsufficientChargeException;
 
 import java.util.Timer;
 import java.util.TimerTask;

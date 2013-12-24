@@ -1,7 +1,7 @@
 package com.robot.enumeration;
 
 
-import com.robot.Execept.TerrainNonRepertorieException;
+import com.robot.exception.TerrainNonRepertorieException;
 
 public enum Land {
 

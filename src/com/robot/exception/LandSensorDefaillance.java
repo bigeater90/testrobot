@@ -1,4 +1,4 @@
-package com.robot.Execept;
+package com.robot.exception;
 
 public class LandSensorDefaillance extends Exception {
 }

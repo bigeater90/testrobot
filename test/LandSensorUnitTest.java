@@ -1,11 +1,9 @@
 import com.robot.Coordinates;
-import com.robot.Execept.InaccessibleCoordinateException;
-import com.robot.Execept.LandSensorDefaillance;
+import com.robot.exception.LandSensorDefaillance;
 import com.robot.LandSensor;
 import com.robot.enumeration.Land;
 import junit.framework.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mockito;
 

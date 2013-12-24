@@ -1,4 +1,4 @@
-package com.robot.Execept;
+package com.robot.exception;
 
 
 public class TerrainNonRepertorieException extends Exception {

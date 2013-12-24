@@ -1,9 +1,9 @@
 package com.robot;
 
 import com.robot.enumeration.Land;
-import com.robot.Execept.InaccessibleCoordinateException;
-import com.robot.Execept.LandSensorDefaillance;
-import com.robot.Execept.TerrainNonRepertorieException;
+import com.robot.exception.InaccessibleCoordinateException;
+import com.robot.exception.LandSensorDefaillance;
+import com.robot.exception.TerrainNonRepertorieException;
 
 import java.util.HashMap;
 import java.util.Map;

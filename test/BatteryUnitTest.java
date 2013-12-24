@@ -1,5 +1,5 @@
 import com.robot.Battery;
-import com.robot.Execept.InsufficientChargeException;
+import com.robot.exception.InsufficientChargeException;
 import junit.framework.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

@@ -2,7 +2,7 @@ package com.robot;
 
 import com.robot.enumeration.Direction;
 import com.robot.enumeration.Instruction;
-import com.robot.Execept.*;
+import com.robot.exception.*;
 
 import java.util.ArrayList;
 
