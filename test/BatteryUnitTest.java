@@ -47,7 +47,7 @@ public class BatteryUnitTest {
     public void testSetUp() throws InterruptedException {
         Battery bat = new Battery();
         bat.setUp();
-        Thread.sleep(10000);    //System.out.println(bat.timeToSufficientCharge(200));
+        Thread.sleep(10000);
         Assert.assertEquals((float) 200, bat.getChargeLevel());
     }
 

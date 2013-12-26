@@ -8,7 +8,8 @@ import java.util.List;
 
 public class RoadBookCalculator {
 
-    static RoadBook calculateRoadBook(Direction direction, Coordinates position, Coordinates destination, ArrayList<Instruction> instructions) {
+    // la methode n'était pas public
+    public static RoadBook calculateRoadBook(Direction direction, Coordinates position, Coordinates destination, ArrayList<Instruction> instructions) {
         List<Direction> directionList = new ArrayList<Direction>();
         if (destination.getX() < position.getX()) directionList.add(Direction.WEST);
         if (destination.getX() > position.getX()) directionList.add(Direction.EAST);
