@@ -60,6 +60,7 @@ public class Robot {
     }
 
     private void moveTo(Coordinates nextPosition) throws InsufficientChargeException, LandSensorDefaillance, InaccessibleCoordinateException {
+        // Initiation de neededEnergy inutile.
         double neededEnergy = 0;
         neededEnergy = landSensor.getPointToPointEnergyCoefficient(position, nextPosition) * energyConsumption;
         if (!cells.canDeliver(neededEnergy)) throw new InsufficientChargeException();
