@@ -7,19 +7,17 @@ import com.robot.exception.UndefinedRoadbookException;
 import com.robot.exception.UnlandedRobotException;
 import junit.framework.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Random;
 
 /**
  * User: Jean
  * Date: 27/12/2013
  */
+
 public class RobotUnitTest {
 
     Robot r;
